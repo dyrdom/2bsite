@@ -1,4 +1,6 @@
 # 2bVPN Landing Page
+[![Discord: 2bRich](https://img.shields.io/badge/Discord-2bRich-5865F2?logo=discord&logoColor=white)](https://discord.gg/vykAqABHv6)
+
 ![d86664b8-a110-48c8-b3ea-f471b93a](https://github.com/user-attachments/assets/382380ba-f2b8-4b57-a9c8-b0d25d80c6e8)
 
 Одностраничный сайт для сервиса 2bVPN, собранный на **Vite** и **React**.  
