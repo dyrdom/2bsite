@@ -1,0 +1,167 @@
+/* Reset & Body */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  scroll-behavior: smooth;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Separator */
+.separator {
+  display: block;
+  width: 100%;
+  height: 40px;       /* уменьшили высоту */
+  margin-top: -1px;   /* почти без отрицательного отступа */
+  fill: #0a0a0a;      /* подгоняем под фон соседней секции */
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('/chuchu.png') center center / cover no-repeat;
+}
+.btn-download {
+  position: absolute;
+  top: 35%;
+  left: 71.5%;
+  transform: translate(-50%, -50%);
+  padding: 30px 100px;
+  background: rgba(0,255,255,0.9);
+  color: #0a0a0a;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0,255,255,0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-download-text {
+  font-size: 2.5rem; /* вот здесь задаёте нужный вам размер */
+  line-height: 1;    /* чтобы текст не «расплющивался» */
+  display: inline-block; /* чтобы можно было точно позиционировать */
+}
+.btn-download:hover {
+  transform: translate(-50%, -50%) translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,255,255,0.6);
+}
+
+/* Features Section */
+.features h2 {
+  text-align: center;
+  color: #00ffff;
+  margin-bottom: 40px;
+}
+.features .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+.feature-item {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,255,255,0.2);
+}
+
+/* Pricing Section */
+.pricing h2 {
+  text-align: center;
+  color: #00ffff;
+  margin-bottom: 40px;
+}
+.pricing .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+.plan {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.plan:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,255,255,0.2);
+}
+.price { font-size: 2rem; color: #00ffff; margin: 20px 0; }
+.btn-plan {
+  padding: 12px 25px;
+  background: transparent;
+  border: 2px solid #00ffff;
+  border-radius: 5px;
+  color: #00ffff;
+  cursor: pointer;
+}
+.btn-plan:hover {
+  background: #00ffff;
+  color: #0a0a0a;
+  transform: translateY(-3px);
+}
+
+/* Download Section */
+.download h2 {
+  text-align: center;
+  color: #00ffff;
+  margin-bottom: 20px;
+}
+.download ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.download ul li a {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #1a1a1a;
+  border-radius: 5px;
+  color: #00ffff;
+  text-decoration: none;
+}
+.download ul li a:hover {
+  background: #00ffff; color: #0a0a0a;
+}
+
+/* Section Wrapper */
+.section-content {
+  background: rgba(20,20,20,0.8);
+  padding: 60px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,255,255,0.1);
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  padding: 40px 0;
+  background: #111;
+  color: #777;
+}
+.footer a {
+  color: #888;
+}
+.footer a:hover { color: #00ffff; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  /* no header, remove burger display or leave if planning future use */
+}
